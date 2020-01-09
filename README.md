@@ -18,11 +18,14 @@ For development env running
 ```
 npm run dev
 ```
+<<<<<<< HEAD
 For production env
 
 ```
 npm run build
 ```
+=======
+>>>>>>> 78fda77515caea1fb749ddf56c5f0d4d59116cfa
 
 ## Running the tests
 
