@@ -30,6 +30,11 @@ module.exports = {
         use: 'babel-loader',
         exclude: /node_modules/
       }, 
+      {
+        test: /\.(graphql|gql)$/,
+        exclude: /node_modules/,
+        loader: "graphql-tag/loader"
+      }
       // {
       //   test: /\.scss$/,
       //   use: [
@@ -40,17 +45,17 @@ module.exports = {
       //     "sass-loader"
       //   ]
       // },
-      {
-        test: /\.jpg|png|gif|woff|eot|ttf|svg|mp4|webm$/,
-        use: {
-          loader: "url-loader",
-          options: {
-            limit: 1000,
-            name: "[hash].[ext]",
-            outputPath: "assets"
-          }
-        }
-      }
+      // {
+      //   test: /\.jpg|png|gif|woff|eot|ttf|svg|mp4|webm$/,
+      //   use: {
+      //     loader: "url-loader",
+      //     options: {
+      //       limit: 1000,
+      //       name: "[hash].[ext]",
+      //       outputPath: "assets"
+      //     }
+      //   }
+      // }
     ]
   },
   plugins: [
