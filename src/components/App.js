@@ -1,8 +1,13 @@
-import React from 'react';
+import React from 'react'
+import  ListOfCategories  from "./ListOfCategories"
+
 const App = () => {
   return (
-    <p>Hello Paul, new React Project ! Awesome!</p>
-  );
+    <>
+      <h1>Welcome back to PetGram, Paul </h1>
+      <ListOfCategories />
+    </>
+  )
 }
- 
-export default App;
+
+export default App

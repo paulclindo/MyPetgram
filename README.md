@@ -34,6 +34,11 @@ npm run test
 
 React, webpack, Graphql & Jest
 
+## Live 
+
+- **1** - [Frontend](https://petgram-paulccari.paulclindo.now.sh/)
+- **2** - [Backend](https://mypetgram-server.paulclindo.now.sh/)
+
 ## Authors
 
 - **Paul Ccari** - _Initial work_ - [Github](https://github.com/paulclindo)
