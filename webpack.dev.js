@@ -23,20 +23,25 @@ module.exports = {
 
   module: {
     rules: [
-      {
-        test: /\.jpg|png|gif|woff|eot|ttf|svg|mp4|webm$/,
-        use: {
-          loader: "file-loader",
-          options: {
-            outPath: "assets"
-          }
-        }
-      },
+      // {
+      //   test: /\.jpg|png|gif|woff|eot|ttf|svg|mp4|webm$/,
+      //   use: {
+      //     loader: "file-loader",
+      //     options: {
+      //       outPath: "assets"
+      //     }
+      //   }
+      // },
       {
         test: /\.js$/,
         use: "babel-loader",
         exclude: /node_modules/
       },
+      {
+        test: /\.(graphql|gql)$/,
+        exclude: /node_modules/,
+        loader: "graphql-tag/loader"
+      }
       // {
       //   test: /\.scss|css$/,
       //   use: ["style-loader", "css-loader", "sass-loader"]
