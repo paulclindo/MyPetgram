@@ -1,7 +1,7 @@
 
-# My personal React Boilerplate 
+# My personal Petgram 
 
-My personal Boilerplate for react project using webpack, graphql and styled components
+A Clone of Instagram for pets using Graphql, React, Webpack, Styled Components
 
 ### Prerequisites
 
