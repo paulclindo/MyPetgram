@@ -2,9 +2,7 @@ import React from 'react'
 import { photos } from '../../../api/db.json';
 import { PhotoCard } from './../PhotoCard';
 
-console.log(photos)
-
-const ListOfPhotoCards = () => {
+const ListOfPhotoCardsComponent = () => {
     return (
         <ul>
             {
@@ -16,4 +14,4 @@ const ListOfPhotoCards = () => {
     );
 }
 
-export default ListOfPhotoCards;
+export default ListOfPhotoCardsComponent;

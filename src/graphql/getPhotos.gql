@@ -1,0 +1,9 @@
+query getPhotos {
+  photos {
+    id
+    categoryId
+    src
+    likes
+    liked
+  }
+}
