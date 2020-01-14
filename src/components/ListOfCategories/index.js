@@ -7,7 +7,7 @@ function useCategoriesData() {
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  useEffect(function() {
+  useEffect(function () {
     setLoading(true);
     const URL = 'https://mypetgram-server.paulclindo.now.sh/categories';
     fetch(URL)
@@ -21,6 +21,7 @@ function useCategoriesData() {
 }
 
 const ListOfCategories = () => {
+
   const { categories, loading } = useCategoriesData();
   // array vacio, porque ya damos por hecho que el dato sera un array, asi que si es un array vacio no se rompera nada
   const [showFixed, setshowFixed] = useState(false);
@@ -39,15 +40,15 @@ const ListOfCategories = () => {
       {loading ? (
         <Loading />
       ) : (
-        // <Item key="loading">
-        //   <Category />
-        // </Item>
-        categories.map(category => (
-          <Item key={category.id}>
-            <Category {...category} />
-          </Item>
-        ))
-      )}
+          // <Item key="loading">
+          //   <Category />
+          // </Item>
+          categories.map(category => (
+            <Item key={category.id}>
+              <Category {...category} />
+            </Item>
+          ))
+        )}
     </List>
   );
   return (
