@@ -1,5 +1,5 @@
-query getPhotos {
-  photos {
+query getPhotos($categoryId: ID) {
+  photos(categoryId : $categoryId) {
     id
     categoryId
     src

@@ -2,7 +2,7 @@ const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const TersetJSPlugin = require("terser-webpack-plugin"); 
+const TersetJSPlugin = require("terser-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -21,6 +21,7 @@ module.exports = {
   devServer: {
     port: 8000,
     open: true,
+    historyApiFallback: true
   },
   module: {
     rules: [
@@ -28,7 +29,7 @@ module.exports = {
         test: /\.js$/,
         use: 'babel-loader',
         exclude: /node_modules/
-      }, 
+      },
       {
         test: /\.(graphql|gql)$/,
         exclude: /node_modules/,

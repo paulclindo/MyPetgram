@@ -8,9 +8,9 @@ import { Loading } from './../components/Loader/index';
 const GET_PHOTOS = gql`
 ${getPhotos}`
 
-export const ListOfPhotoCards = () => {
-    const { loading, error, data } = useQuery(GET_PHOTOS)
-    console.log(data, "desde gql")
-    loading && <Loading />
+export const ListOfPhotoCards = ({ categoryId }) => {
+    const { loading, error, data } = useQuery(GET_PHOTOS, { variables: { categoryId } })
+    if (loading) <Loading />
+    if (error) return <h1>Error</h1>
     return <ListOfPhotoCardsComponent {...data} />
 }

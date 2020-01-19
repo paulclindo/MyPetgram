@@ -1,8 +1,7 @@
 import React from 'react'
-import { photos } from '../../../api/db.json';
 import { PhotoCard } from './../PhotoCard';
 
-const ListOfPhotoCardsComponent = () => {
+const ListOfPhotoCardsComponent = ({ photos = [] }) => {
     return (
         <ul>
             {
