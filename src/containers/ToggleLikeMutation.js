@@ -1,10 +1,10 @@
 import React from 'react';
 import { gql } from 'apollo-boost';
 import { Mutation } from 'react-apollo';
-import likeAnonymousPhoto from '../graphql/likeAnonymousPhoto.gql';
+import likePhoto from '../graphql/likePhoto.gql';
 
 const LIKE_PHOTO = gql`
-  ${likeAnonymousPhoto}
+  ${likePhoto}
 `;
 
 export const ToggleLikeMutation = ({ children }) => (
