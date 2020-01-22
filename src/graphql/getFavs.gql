@@ -1,0 +1,9 @@
+query getFavs {
+    favs {
+        id
+        categoryId
+        src
+        likes
+        userId
+    }
+}
