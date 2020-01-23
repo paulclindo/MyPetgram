@@ -1,7 +1,8 @@
 /* eslint react/prop-types: 0 */
 import React from 'react';
-import { Form, Input, Button, Title, Error } from './style';
+import { Form, Input, Title, Error } from './style';
 import { useInputValue } from '../../hooks/useInputValue';
+import { SubmitButton } from '../SubmitButton/index';
 
 export const UserForm = ({ onSubmit, title, error, disabled }) => {
   const email = useInputValue('');
@@ -28,9 +29,7 @@ export const UserForm = ({ onSubmit, title, error, disabled }) => {
           placeholder="Password"
           {...password}
         />
-        <Button disabled={disabled} type="submit">
-          {title}
-        </Button>
+        <SubmitButton disabled={disabled}>{title}</SubmitButton>
       </Form>
       {error && <Error>{error}</Error>}
     </>

@@ -2,16 +2,19 @@ import styled from 'styled-components';
 import { fadeIn } from '../../styles/animation';
 
 export const Article = styled.article`
-  min-height:200px;
-`
+  min-height: 200px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+`;
 
 export const ImgWrapper = styled.div`
   position: relative;
   height: 0;
   padding-top: 56.25%;
   border-radius: 10px;
-  box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
 `;
 
 export const Img = styled.img`
@@ -22,4 +25,3 @@ export const Img = styled.img`
   top: 0;
   object-fit: cover;
 `;
-

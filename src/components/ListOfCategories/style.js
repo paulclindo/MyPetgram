@@ -5,7 +5,7 @@ const List = styled.ul`
   display: flex;
   overflow: hidden;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   ${props =>
     props.fixed &&
     css`
