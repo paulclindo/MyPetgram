@@ -1,9 +1,14 @@
 import React from 'react';
 import { GetFavorites } from '../containers/GetFavorites';
+import { Layout } from '../components/Layout/index';
 
 export const Favs = () => (
   <>
-    <h1>My Favorites</h1>
-    <GetFavorites />
+    <Layout
+      title="Your Favorites"
+      subtitle="Here you can find your favorites pet photos"
+    >
+      <GetFavorites />
+    </Layout>
   </>
 );
