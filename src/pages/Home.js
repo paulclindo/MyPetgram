@@ -1,9 +1,11 @@
+/*eslint-disable*/
+
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import ListOfCategories from '../components/ListOfCategories/index';
+import { ListOfCategories } from '../components/ListOfCategories/index';
 import { ListOfPhotoCards } from '../containers/ListOfPhotoCards';
 
-export const Home = ({ categoryId }) => (
+export default ({ categoryId }) => (
   <>
     <Helmet>
       <title>Petgram - The best app for your pet photos</title>

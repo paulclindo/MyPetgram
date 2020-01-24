@@ -1,8 +1,9 @@
+/* eslint-disable */
 import React from 'react';
 import { GetFavorites } from '../containers/GetFavorites';
 import { Layout } from '../components/Layout/index';
 
-export const Favs = () => (
+export default () => (
   <>
     <Layout
       title="Your Favorites"

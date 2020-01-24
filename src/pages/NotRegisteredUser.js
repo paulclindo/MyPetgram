@@ -1,10 +1,11 @@
+/*eslint-disable*/
 import React, { useContext } from 'react';
 import { Context } from '../Context';
 import { UserForm } from '../components/UserForm/index';
 import { RegisterMutation } from '../containers/RegisterMutation';
 import { LoginMutation } from '../containers/LoginMutation';
 
-export const NotRegisteredUser = () => {
+export default () => {
   const { activateAuth } = useContext(Context);
   return (
     <>

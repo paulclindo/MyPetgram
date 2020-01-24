@@ -7,7 +7,7 @@ function useCategoriesData() {
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  useEffect(function () {
+  useEffect(function() {
     setLoading(true);
     const URL = 'https://mypetgram-server.paulclindo.now.sh/categories';
     fetch(URL)
@@ -20,8 +20,7 @@ function useCategoriesData() {
   return { categories, loading };
 }
 
-const ListOfCategories = () => {
-
+const ListOfCategoriesComponent = () => {
   const { categories, loading } = useCategoriesData();
   // array vacio, porque ya damos por hecho que el dato sera un array, asi que si es un array vacio no se rompera nada
   const [showFixed, setshowFixed] = useState(false);
@@ -40,12 +39,12 @@ const ListOfCategories = () => {
       {loading ? (
         <Loading />
       ) : (
-          categories.map(category => (
-            <Item key={category.id}>
-              <Category {...category} path={`/pet/${category.id}`} />
-            </Item>
-          ))
-        )}
+        categories.map(category => (
+          <Item key={category.id}>
+            <Category {...category} path={`/pet/${category.id}`} />
+          </Item>
+        ))
+      )}
     </List>
   );
   return (
@@ -56,4 +55,4 @@ const ListOfCategories = () => {
   );
 };
 
-export default ListOfCategories;
+export const ListOfCategories = React.memo(ListOfCategoriesComponent);
