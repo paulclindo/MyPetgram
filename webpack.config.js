@@ -20,11 +20,6 @@ module.exports = {
     minimizer: [new TersetJSPlugin()],
   },
 
-  devServer: {
-    port: 8000,
-    open: true,
-    historyApiFallback: true,
-  },
   module: {
     rules: [
       {
@@ -40,7 +35,6 @@ module.exports = {
     ],
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       title: 'Webpack dev server',
       template: path.resolve(__dirname, 'public/index.html'),
