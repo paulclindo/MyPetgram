@@ -1,5 +1,5 @@
-/*eslint-disable*/
-
+// /*eslint-disable*/
 import React from 'react';
+import { NotFound } from '../components/NotFound';
 
-export default () => <h1>This page doesnt exist</h1>;
+export default () => <NotFound />;

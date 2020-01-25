@@ -10,6 +10,19 @@
 
 <body>
   <div id="app"></div>
+  <noscript>
+    <h3>This application need to be running with Javascript</h3>
+  </noscript>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker
+          .register('/service-worker.js')
+          .then(resgistration => console.log('SW is working'))
+          .catch(registrationError => console.log('SW error', registrationError));
+      });
+    }
+  </script>
 </body>
 
 </html>
