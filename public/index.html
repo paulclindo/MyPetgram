@@ -15,7 +15,7 @@
   </noscript>
   <script>
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
+      window.addEventListener('load', () => {
         navigator.serviceWorker
           .register('/service-worker.js')
           .then(resgistration => console.log('SW is working'))

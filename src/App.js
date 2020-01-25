@@ -5,7 +5,7 @@ import { Logo } from './components/Logo';
 import { Navbar } from './components/Navbar/index';
 // import { Favs } from '../pages/Favs';
 import { Context } from './Context';
-import { Loading } from './components/Loader/index';
+import { Loading } from './components/Loader';
 
 const Favs = React.lazy(() => import('./pages/Favs'));
 const Detail = React.lazy(() => import('./pages/Detail'));

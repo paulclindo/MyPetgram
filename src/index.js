@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from '@apollo/react-hooks';
 import App from './App';
-import Context from './Context';
+import { Context } from './Context';
 
 const client = new ApolloClient({
   uri: 'https://mypetgram-server.paulclindo.now.sh/graphql',
