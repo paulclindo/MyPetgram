@@ -13,9 +13,9 @@ module.exports = {
   mode: 'development',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'js/[name].[hash].js',
-    // chunkFilename: 'js/[id].[chunkhash].js',
-    publicPath: '/dist/',
+    filename: 'js/[name].js',
+    chunkFilename: 'js/[id].[chunkhash].js',
+    publicPath: 'dist/',
   },
   optimization: {
     minimizer: [new TersetJSPlugin()],
