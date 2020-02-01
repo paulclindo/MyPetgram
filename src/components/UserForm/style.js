@@ -1,13 +1,21 @@
 import styled from 'styled-components';
 
+export const ContainerForm = styled.div`
+  width: 80%;
+  margin: 0 auto;
+`;
+
 export const Form = styled.form`
-  padding: 16px 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  margin: 0 auto;
 `;
 export const Input = styled.input`
   border: 1px solid #e5e5e5;
   border-radius: 3px;
   margin-bottom: 8px;
-  padding: 8px 4px;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
   display: block;
   width: 100%;
   &[disabled] {

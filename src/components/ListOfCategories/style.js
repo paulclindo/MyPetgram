@@ -10,7 +10,6 @@ const List = styled.ul`
   /* touch */
   overflow-x: scroll;
   overflow-y: hidden;
-
   -ms-overflow-style: none;
   /* Hides the scrollbar. */
 

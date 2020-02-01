@@ -1,6 +1,6 @@
 /* eslint react/prop-types: 0 */
 import React from 'react';
-import { Form, Input, Title, Error } from './style';
+import { ContainerForm, Form, Input, Title, Error } from './style';
 import { useInputValue } from '../../hooks/useInputValue';
 import { SubmitButton } from '../SubmitButton/index';
 
@@ -14,7 +14,7 @@ export const UserForm = ({ onSubmit, title, error, disabled }) => {
   };
 
   return (
-    <>
+    <ContainerForm>
       <Title>{title}</Title>
       <Form disabled={disabled} onSubmit={handleSubmit}>
         <Input
@@ -32,6 +32,6 @@ export const UserForm = ({ onSubmit, title, error, disabled }) => {
         <SubmitButton disabled={disabled}>{title}</SubmitButton>
       </Form>
       {error && <Error>{error}</Error>}
-    </>
+    </ContainerForm>
   );
 };
