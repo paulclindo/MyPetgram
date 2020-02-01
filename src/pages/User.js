@@ -1,8 +1,10 @@
+/*eslint-disable*/
+
 import React, { useContext } from 'react';
 import { Context } from '../Context';
 import { SubmitButton } from '../components/SubmitButton/index';
 
-export const User = () => {
+export default () => {
   const { removeAuth } = useContext(Context);
   return (
     <>

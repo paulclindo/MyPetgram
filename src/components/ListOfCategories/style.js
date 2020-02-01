@@ -6,6 +6,23 @@ const List = styled.ul`
   overflow: hidden;
   width: 100%;
   margin-bottom: 1.5rem;
+
+  /* touch */
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  -ms-overflow-style: none;
+  /* Hides the scrollbar. */
+
+  -ms-scroll-chaining: none;
+  /* Prevents Metro from swiping to the next tab or app. */
+
+  -ms-scroll-snap-type: mandatory;
+  /* Forces a snap scroll behavior on your images. */
+
+  -ms-scroll-snap-points-x: snapInterval(0%, 100%);
+  /* Defines the y and x intervals to snap to when scrolling. */
+
   ${props =>
     props.fixed &&
     css`

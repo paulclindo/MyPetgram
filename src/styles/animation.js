@@ -14,3 +14,7 @@ const fadeInKeyframes = keyframes`
 export const fadeIn = ({ time = '1s', type = 'ease' } = {}) => css`
   animation: ${time} ${fadeInKeyframes} ${type};
 `;
+
+export const animate = css`
+  transition: transform 0.3s ease-out;
+`;

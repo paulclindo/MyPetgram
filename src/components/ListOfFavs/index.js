@@ -15,7 +15,7 @@ export const ListOfFavs = ({ favs = [] }) => (
 ListOfFavs.propTypes = {
   favs: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number,
+      id: PropTypes.string,
       src: PropTypes.string,
     })
   ),
